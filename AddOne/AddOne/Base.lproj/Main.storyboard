@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD_Comic_Serif_Pro.otf">
+            <string>HVDComicSerifPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AddOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="WrF-tW-OuZ">
+                                <rect key="frame" x="20" y="57" width="119" height="51"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-jU-g2d">
+                                <rect key="frame" x="245" y="58" width="149" height="49"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hu-em-T9m">
+                                <rect key="frame" x="73.5" y="69.5" width="12.5" height="26"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="A9W-M1-uyY">
+                                <rect key="frame" x="57" y="382.5" width="300" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A9W-M1-uyY" secondAttribute="height" multiplier="100:47" id="KAE-lz-rFJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-2i-aXy">
+                                <rect key="frame" x="278.5" y="69.5" width="82" height="26"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EXJ-hv-q1E">
+                                <rect key="frame" x="109" y="608.5" width="196" height="93.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="F3s-Mi-yzD"/>
+                                    <constraint firstAttribute="width" secondItem="EXJ-hv-q1E" secondAttribute="height" multiplier="65:31" id="Tn9-Ym-HLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="70"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="inputFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="l32-UY-Gsh"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teq-aG-LHb">
+                                <rect key="frame" x="129" y="412" width="156" height="82"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rM5-2i-aXy" secondAttribute="trailing" constant="53.5" id="6Rd-pc-qHk"/>
+                            <constraint firstItem="EXJ-hv-q1E" firstAttribute="centerX" secondItem="teq-aG-LHb" secondAttribute="centerX" id="Fkc-5a-HkM"/>
+                            <constraint firstItem="WrF-tW-OuZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fsh-mQ-VG7"/>
+                            <constraint firstItem="3Hu-em-T9m" firstAttribute="centerY" secondItem="WrF-tW-OuZ" secondAttribute="centerY" id="H0d-2s-KPT"/>
+                            <constraint firstItem="rM5-2i-aXy" firstAttribute="centerX" secondItem="0z9-jU-g2d" secondAttribute="centerX" id="QUF-47-WJf"/>
+                            <constraint firstItem="teq-aG-LHb" firstAttribute="centerX" secondItem="A9W-M1-uyY" secondAttribute="centerX" id="U4I-6z-j5E"/>
+                            <constraint firstItem="EXJ-hv-q1E" firstAttribute="top" secondItem="A9W-M1-uyY" secondAttribute="bottom" constant="85" id="UiD-18-o0d"/>
+                            <constraint firstItem="WrF-tW-OuZ" firstAttribute="centerY" secondItem="0z9-jU-g2d" secondAttribute="centerY" id="WO7-m6-Vvf"/>
+                            <constraint firstItem="teq-aG-LHb" firstAttribute="centerY" secondItem="A9W-M1-uyY" secondAttribute="centerY" id="Xlp-ed-CSG"/>
+                            <constraint firstItem="WrF-tW-OuZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="bdQ-dI-h4o"/>
+                            <constraint firstItem="A9W-M1-uyY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dUj-bs-O2I"/>
+                            <constraint firstItem="rM5-2i-aXy" firstAttribute="centerY" secondItem="0z9-jU-g2d" secondAttribute="centerY" id="hlj-0g-05N"/>
+                            <constraint firstItem="3Hu-em-T9m" firstAttribute="centerX" secondItem="WrF-tW-OuZ" secondAttribute="centerX" id="jcK-xQ-fOZ"/>
+                            <constraint firstItem="A9W-M1-uyY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oTH-JF-jYs"/>
+                            <constraint firstItem="0z9-jU-g2d" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rSn-F7-gzg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="EXJ-hv-q1E" id="tUL-DT-BiO"/>
+                        <outlet property="numberLabel" destination="teq-aG-LHb" id="Mv7-k2-cKV"/>
+                        <outlet property="scoreLabel" destination="3Hu-em-T9m" id="aeO-Lw-Ws5"/>
+                        <outlet property="timeLabel" destination="rM5-2i-aXy" id="TMO-Eh-aWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="number" width="300" height="122"/>
+        <image name="score" width="119" height="51"/>
+        <image name="time" width="149" height="49"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
